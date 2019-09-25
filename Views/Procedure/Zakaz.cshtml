@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+
+<div layout:fragment="content">
+    <div id="heading">
+        <h1>@ViewBag.Zakazs.Name</h1>
+        @if (@ViewBag.Zakazs.Image != null)
+        {
+            <div class="pull-left" style="margin-right: 10px">
+                <img class="img-thumbnail" width="500" height="500"
+                     src="@Url.Action("GetImage", "Procedure",
+               new { @ViewBag.Zakazs.Name, @ViewBag.Zakazs.procId})" />
+            </div>
+        }
+    </div>
+    <section>
+        <div id=" procedury">
+            <h2>Товары</h2>
+            <p style="word-break: break-all">
+                @ViewBag.Zakazs.Product
+            </p>
+            <h2>Описание</h2>
+            <p style="word-break: break-all">@ViewBag.Zakazs.Soder</p>
+        </div>
+    </section>
+</div>
+

@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<div layout:fragment="content">
+    <div id="heading">
+        <h1>Каталог услуг</h1>
+    </div>
+    <section>
+        <blockquote class="">
+            <p>
+                Покупка компьютера или ноутбука, лицензионного программного обеспечения
+                или сервера, принтера или расходных материалов часто происходит под заказ. Чтобы ожидание
+                было спланированным, а поступление товара не стало неожиданностью, воспользуйтесь нашим
+                сервисом для получения оперативной информации о выполнении заказа.
+            </p>
+        </blockquote>
+        <div class="table-responsive">
+
+            <table border="1" cellspacing="10" cellpadding="10" class="table table-striped">
+
+                @{
+
+                    foreach (var Procedure in ViewBag.Procedures)
+                    {
+                        <tr>
+                            <td id="@Procedure.Id"><a href="/Procedure/AddZakaz/@Procedure.Id">@Procedure.Name</a></td>
+
+                            @if (Procedure.Zakazs != null)
+                            {
+                                foreach (var Zakaz in Procedure.Zakazs)
+                                {
+
+                                <tr>
+                                    <td bgcolor="#FFDAB9" headers="@Zakaz.procId">
+                                    <a href="/Procedure/Zakaz?ZakazName=@Zakaz.Name&procId=@Zakaz.procId">@Zakaz.Name</a></td>
+                                </tr>
+                            }
+                        }
+                            </tr>
+                        }
+                }
+
+
+            </table>
+        </div>
+    </section>
+</div>
+

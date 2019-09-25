@@ -1,0 +1,160 @@
+﻿body {
+	color: #544e4e;
+	font: 20px Tahoma;
+	background-color: #f9f7f7;
+	border-top: 16px solid #423787;
+	margin: 0;
+}
+button {
+	color: #161615;
+	background-color: #4682b4;
+	border: none;
+	height: 32px;
+	font-family: 'Oswald', sans-serif;
+}
+
+ button.add {
+       color: #161615;
+	background-color:#4682b4;
+	border: none;
+        width: 100px; 
+	height: 50px;
+	font-family: 'Oswald', sans-serif;
+   }
+p {
+      
+	margin: 5px 0;
+     
+}
+#wrapper {
+	max-width: 960px;
+	margin: auto;
+}
+header {
+	padding: 5px 0;
+}
+
+form[name="search"] {
+	float: right;
+}
+form[name="product"] {
+	float: center;
+}
+#width {
+    width: 400px; 
+    height: 150px;
+   } 
+#width1 {
+    width: 300px; 
+    height: 30px;
+   } 
+nav a {
+	text-decoration: none;
+}
+
+nav ul {
+	margin: 40;
+	padding: 50;
+}
+
+nav li {
+	list-style-position: inside;
+	font: 25px 'Oswald', sans-serif;
+	padding: 15px;
+}
+
+.top-menu li {
+	display: inline-block;
+	padding: 10px 30px;
+	margin: 0;
+}
+
+.top-menu li.active {
+	background: #4682b4;
+	color: #fff;
+}
+
+.top-menu a {
+	color: #474141;
+}
+h1 {
+	display: inline-block;
+	color: #474141;
+	font: 40px/40px 'Oswald', sans-serif;	
+	margin: 0;
+	padding: 0 10px;
+}
+h2 {
+	display: inline-block;
+	color: #0f0e0e;
+	font: 25px/25px 'Oswald', sans-serif;	
+	margin: 0;
+	padding: 0 10px;
+}
+blockquote {
+    margin: 0;
+    background: #4682B4;
+    padding: 10px 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+blockquote p {
+	color: #fff;
+	font-style: italic;
+	font-size: 20px;
+	margin: 0;
+}
+
+blockquote cite {
+	display: block;
+	font-size: 20px;
+	font-style: normal;
+	color: #1d8ea6;
+	margin: 0;
+	text-align: center;
+}
+footer {
+	background: #7e7e7e;
+	color: #dbdbdb;
+	font-size: 12px;
+}
+
+#footer {
+	max-width: 1060px;
+	margin: auto;
+        bottom: 0;
+	padding: 10px 0;
+	height: 190px;
+}
+footer a {
+	color: #dbdbdb;
+}
+
+#sitemap {
+	width: 150px;
+	float: left;
+	margin-left: 5px;
+	padding-right: 15px;
+}
+
+#sitemap div {
+	display: inline-block;
+}
+
+#sitemap div + div {
+	margin-left: 40px;
+}
+
+#sitemap a {
+	display: block;
+	text-decoration: none;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+#sitemap a:hover {
+	text-decoration: underline;
+}
+
+
